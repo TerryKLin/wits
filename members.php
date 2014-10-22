@@ -1,52 +1,117 @@
-<?php 
+<?php include('navbar.php') ?>
 
-$members_array = array(
-	array("name" => "Andrey Kulakevich", "position" => "President", "img" => "andrey.jpg"),
-	array("name" => "Tyler Pachal", "position" => "Vice-President", "img" => "tyler.jpg"),
-	array("name" => "Gilberto De Melo", "position" => "Treasurer", "img" => "gilberto.jpg"),
-	array("name" => "Kyle Asaff", "position" => "Member", "img" => "kyle.jpg"),
-	array("name" => "Matthew Coelho", "position" => "Member", "img" => "coelho.jpg"),
-	array("name" => "Terry Lin", "position" => "Member", "img" => "terry.jpg"),
-	array("name" => "Brenden Krochko", "position" => "Member", "img" => "brenden.jpg")
-);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
-	<?php include('head.php') ?>
-	<body>
-		<?php $members = true ?>
-		<?php include('navbar.php') ?>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WiTS Member's Page Template</title>
 
-		<!-- Begin page content -->
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="page-header">
-						<h1 class="text-center">Members</h1>
-					</div>
-				
-					<div class="lead">
-						<?php foreach($members_array as $member): ?>
-							<div class="row">
-								<div class="col-xs-12">
-									<img src="images/<?php echo $member['img'] ?>" alt="<?php echo $member['name'] ?>" 
-										class="img-circle responsive-img col-xs-12 col-sm-4">	
-									<br>
-									<h3 class="col-xs-12 col-sm-8 text-center">
-										<?php echo $member['name'] ?><br>
-										<small><?php echo $member['position'] ?></small>
-									</h3>
-								</div>
-							</div>
-							<hr>
-						<?php endforeach ?>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-		<?php include('footer.php') ?>
-		<?php include('javascript.php') ?>
-	</body>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <h1 class="text-center">People Behind WITS</h1>
+
+           <div class="col-xs-12 col-sm-4 col-md-3">
+                <img src="images/Dog1.jpg" alt="Sarah Morash">
+                <h3 class="col-xs-12 text-center">Sarah Morash                    
+                    <br>
+                    <small>President</small>
+                </h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <img src="images/Dog2.jpg" alt="Sage Franch">
+                <h3 class="text-center">Sage Franch                  
+                    <br>
+                    <small>Vice President</small>
+                </h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <img src="images/Dog3.jpg" alt="Alora Reid">
+                <h3 class="text-center">Alora Reid                   
+                    <br>
+                    <small>Treasurer</small>
+                </h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <img src="images/Dog1.jpg" alt="Vivian Kou">
+                <h3 class="text-center">Vivian Kou                    
+                    <br>
+                    <small>Secretary</small>
+                </h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <img src="images/Dog2.jpg" alt="Ashlyn Campbell">
+                <h3 class="text-center">Ashlyn Campbell                    
+                    <br>
+                    <small>Communication Rep</small>
+                </h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <img src="images/Dog3.jpg" alt="Deepika Agarwal">
+                <h3 class="text-center">Deepika Agarwal                    
+                    <br>
+                    <small>Education Rep</small>
+                </h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <img src="images/Dog3.jpg" alt="Raheleh Makki">
+                <h3 class="text-center">Raheleh Makki                    
+                    <br>
+                    <small>Events/Social Rep</small>
+                </h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <img src="images/Dog2.jpg" alt="Nilofer Mehta">
+                <h3 class="text-center">Nilofer Mehta                  
+                    <br>
+                    <small>Alumni Rep</small>
+                </h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <img src="images/Dog1.jpg" alt="Fariba Haddadi">
+                <h3 class="text-center">Fariba Haddadi                   
+                    <br>
+                    <small>Graduate Rep</small>
+                </h3>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
+
+<?php include('footer.php') ?>
+<?php include('javascript.php') ?>  
